@@ -5,19 +5,17 @@ const Experience = () => {
     return (
         <>
             <div className="bg-base-200 max-w-screen-2xl container mx-auto px-4 md:px-20 py-12 md:py-24">
-                <div>
-                    <h1 className="text-2xl font-bold">Experience</h1>
-                    <p className="pt-3 pb-6 text-lg">I{"'"}ve more then 2 years of experience in below this technology!</p>
-                    <div className='text-9xl grid grid-cols-2 md:grid-cols-5 gap-6 mt-6 '>
-                        {
-                            items.map(({ id, logo, name }) => (
-                                <div key={id} className='shadow-lg border-2 border-[#41b8d6] p-10 rounded-xl flex flex-col justify-center items-center hover:scale-105 duration-150 cursor-pointer'>
-                                    {logo}
-                                    <span className='text-2xl font-bold pt-3'>{name}</span>
-                                </div>
-                            ))
-                        }
-                    </div>
+                <h1 className="text-4xl font-bold">Experience</h1>
+                <p className="pt-3 pb-6 text-lg">I{"'"}ve more then 2 years of experience in below this technology!</p>
+                <div className='text-9xl grid grid-cols-2 md:grid-cols-3 gap-6 mt-6 '>
+                    {
+                        items.map(({ id, logo, name }) => (
+                            <div key={id} className='shadow-lg border-2 border-[#41b8d6] p-10 rounded-3xl flex flex-col justify-center items-center hover:scale-105 duration-150 cursor-pointer'>
+                                {logo}
+                                <span className='text-2xl font-bold pt-3'>{name}</span>
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
             <hr />
@@ -72,7 +70,7 @@ const items = [
         name: "Figma"
     },
     {
-        id: 9,
+        id: 10,
         logo: <BiLogoFirebase />,
         name: "Firebase"
     },

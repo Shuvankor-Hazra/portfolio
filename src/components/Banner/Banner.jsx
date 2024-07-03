@@ -15,7 +15,7 @@ const Banner = () => {
                         <div className='text-xl md:text-3xl font-bold flex gap-2 text-center md:text-left'>
                             <h3>A <span className='text-[#41b8d6]'>Creative</span> Frontend</h3>
                             <ReactTyped
-                                className='text-[#41b8d6] text-2    xl'
+                                className='text-[#41b8d6] text-2xl'
                                 strings={["Web Developer !", "Coder !", "Programer !"]}
                                 typeSpeed={30}
                                 backSpeed={50}

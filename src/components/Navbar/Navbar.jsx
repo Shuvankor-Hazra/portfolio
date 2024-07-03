@@ -1,5 +1,6 @@
 import logo from '../../assets/images/banner.png';
 import { MdOutlineMenu } from "react-icons/md";
+import { FaDownload } from 'react-icons/fa';
 
 
 const Navbar = () => {
@@ -44,7 +45,10 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <a className="btn bg-[#41b8d6] text-white hover:bg-[#4B0082]">Resume</a>
+                        <a href='/resume.pdf' download className="btn bg-[#41b8d6] text-white hover:bg-[#4B0082]">
+                            <FaDownload className='text-lg' />
+                            Resume
+                        </a>
                     </div>
                 </div>
             </div>
