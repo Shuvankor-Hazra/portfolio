@@ -24,10 +24,10 @@ const Navbar = () => {
                                 }
                             </ul>
                         </div>
-                        <a className="btn btn-ghost btm-nav-lg hover:bg-transparent text-xl">
-                            <img src={logo} alt="Logo" className='w-14 rounded-full' />
-                            <div className='text-left '>
-                                <h1 className='flex items-center justify-center text-[#4ddbff]'>
+                        <a className="btn btn-ghost btm-nav-md hover:bg-transparent text-lg">
+                            <img src={logo} alt="Logo" className='w-12 rounded-full' />
+                            <div className='text-left'>
+                                <h1 className=' flex items-center justify-center text-[#4ddbff]'>
                                     --WEB--
                                 </h1>
                                 <h1 className='text-[#4B0082]'>Developer</h1>
