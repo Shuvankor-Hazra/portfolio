@@ -4,7 +4,7 @@ import { BiLogoBootstrap, BiLogoCss3, BiLogoFigma, BiLogoFirebase, BiLogoHtml5, 
 const Experience = () => {
     return (
         <>
-            <div className="bg-base-200 max-w-screen-2xl container mx-auto px-4 md:px-20 py-12 md:py-24">
+            <div name="Experience" className="bg-base-200 max-w-screen-2xl container mx-auto px-4 md:px-20 py-12 md:py-24">
                 <h1 className="text-4xl font-bold">Experience</h1>
                 <p className="pt-3 pb-6 text-lg">I{"'"}ve more then 2 years of experience in below this technology!</p>
                 <div className='text-9xl grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mt-6 '>
@@ -18,7 +18,6 @@ const Experience = () => {
                     }
                 </div>
             </div>
-            <hr />
         </>
     );
 }

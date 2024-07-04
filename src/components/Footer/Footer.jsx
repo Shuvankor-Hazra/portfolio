@@ -18,18 +18,18 @@ const Footer = () => {
                                 <h1 className='text-[#41b8d6]'>Developer</h1>
                             </div>
                         </a>
-                        <div className="text-lg font-bold space-y-2 mt-5 flex flex-col items-center lg:items-start">
+                        <div className="text-lg font-bold space-y-2 mt-6 flex flex-col items-center lg:items-start">
                             <p className='flex items-center gap-2 '>
                                 <IoIosPerson className="text-[#41b8d6] text-xl" />
                                 <span>Shuvankor Hazra</span>
                             </p>
                             <p className='flex items-center gap-2 '>
-                                <IoIosMail className="text-[#41b8d6] text-xl" />
-                                <span>shuvo.s.ovuhs@gmail.com</span>
-                            </p>
-                            <p className='flex items-center gap-2 '>
                                 <IoIosPhonePortrait className="text-[#41b8d6] text-xl" />
                                 <span>+88 01741-836653</span>
+                            </p>
+                            <p className='flex items-center gap-2 '>
+                                <IoIosMail className="text-[#41b8d6] text-xl" />
+                                <span>shuvo.s.ovuhs@gmail.com</span>
                             </p>
                         </div>
                     </nav>
@@ -59,7 +59,7 @@ const Footer = () => {
                     </nav>
                 </div>
                 <div className='py-3 border-t border-gray-600'>
-                    <div className="p-4 text-center">
+                    <div className="p-4 text-center text-sm">
                         <p>Copyright © ${new Date().getFullYear()} - All right reserved by Shuvankor Hazra</p>
                     </div>
                 </div>

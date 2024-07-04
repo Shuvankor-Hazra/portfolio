@@ -1,6 +1,7 @@
 import logo from '../../assets/images/banner.png';
 import { MdOutlineMenu } from "react-icons/md";
 import { FaDownload } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 
 const Navbar = () => {
@@ -8,7 +9,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="bg-base-200 bg-opacity-50 fixed top-0 left-0 right-0 z-50">
+            <div className="bg-base-200 bg-opacity-50 fixed top-0 left-0 right-0 z-50 py-3">
                 <div className="navbar max-w-screen-2xl container mx-auto px-4 md:px-20">
                     <div className="navbar-start">
                         <div className="dropdown">
@@ -17,15 +18,23 @@ const Navbar = () => {
                             </div>
                             <ul
                                 tabIndex={0}
-                                className="menu menu-sm dropdown-content bg-[#4B0082] rounded-box z-[1] w-48 p-6 shadow space-y-4 text-white">
+                                className="menu menu-sm dropdown-content bg-[#41b8d6] rounded-box z-[1] w-52 p-6 shadow space-y-4 text-white">
                                 {
                                     navItems.map(({ id, text }) => (
-                                        <li className='hover:scale-105 duration-150 cursor-pointer' key={id}>{text}</li>
+                                        <li className='hover:scale-105 duration-150 cursor-pointer' key={id}>
+                                            <Link
+                                                to={text}
+                                                smooth={true}
+                                                duration={500}
+                                                offset={-70}
+                                                activeClass='active'
+                                            >{text}</Link>
+                                        </li>
                                     ))
                                 }
                             </ul>
                         </div>
-                        <a className="btn btn-ghost btm-nav-md hover:bg-transparent text-lg">
+                        <button to={'Home'} className="flex items-center gap-2 hover:bg-transparent text-lg">
                             <img src={logo} alt="Logo" className='w-12 rounded-full' />
                             <div className='text-left'>
                                 <h1 className=' flex items-center justify-center text-[#4ddbff]'>
@@ -33,13 +42,21 @@ const Navbar = () => {
                                 </h1>
                                 <h1 className='text-[#4B0082]'>Developer</h1>
                             </div>
-                        </a>
+                        </button>
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal text-base font-semibold space-x-6">
                             {
                                 navItems.map(({ id, text }) => (
-                                    <li className='hover:scale-110 duration-150 cursor-pointer' key={id}>{text}</li>
+                                    <li className='hover:scale-110 duration-150 cursor-pointer' key={id}>
+                                        <Link
+                                            to={text}
+                                            smooth={true}
+                                            duration={500}
+                                            offset={-70}
+                                            activeClass='active'
+                                        >{text}</Link>
+                                    </li>
                                 ))
                             }
                         </ul>
@@ -71,7 +88,11 @@ const navItems = [
     },
     {
         id: 4,
-        text: "Contacts"
+        text: "Experience"
+    },
+    {
+        id: 5,
+        text: "Contact"
     },
 ]
 
