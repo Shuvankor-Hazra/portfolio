@@ -4,6 +4,7 @@ import Contact from "./components/Contact/Contact";
 import Experience from "./components/Experience/Experience";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
+import Projects from "./components/Projects/Projects";
 
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
       <Navbar />
       <Banner />
       <About />
+      <Projects />
       <Experience />
       <Contact />
       <Footer />

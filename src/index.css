@@ -16,3 +16,6 @@ h5,
 h6 {
   font-family: "Merriweather", serif;
 }
+.group:hover .group-hover\:opacity-100 {
+  opacity: i !important;
+}

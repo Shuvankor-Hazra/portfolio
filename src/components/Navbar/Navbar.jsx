@@ -34,18 +34,18 @@ const Navbar = () => {
                                 }
                             </ul>
                         </div>
-                        <button to={'Home'} className="flex items-center gap-2 hover:bg-transparent text-lg">
-                            <img src={logo} alt="Logo" className='w-12 rounded-full' />
-                            <div className='text-left'>
-                                <h1 className=' flex items-center justify-center text-[#4ddbff]'>
-                                    --WEB--
+                        <button className="flex items-center gap-2 hover:bg-transparent md:text-lg">
+                            <img src={logo} alt="Logo" className='w-14 rounded-full' />
+                            <div className='text-left font-bold'>
+                                <h1 className=' flex items-center text-[#4B0082]'>
+                                    Web__
                                 </h1>
-                                <h1 className='text-[#4B0082] font-bold'>Developer</h1>
+                                <h1 className='text-[#4B0082]'>Developer</h1>
                             </div>
                         </button>
                     </div>
                     <div className="navbar-center hidden lg:flex">
-                        <ul className="menu menu-horizontal text-base font-semibold space-x-6">
+                        <ul className="menu menu-horizontal text-lg font-bold space-x-3">
                             {
                                 navItems.map(({ id, text }) => (
                                     <li className='hover:scale-110 duration-150 cursor-pointer' key={id}>
@@ -62,8 +62,8 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <a href='/resume.pdf' download className="btn bg-[#41b8d6] text-white hover:bg-[#4B0082]">
-                            <FaDownload className='text-lg' />
+                        <a href='/My Resume.pdf' download className="btn bg-[#41b8d6] text-white hover:bg-[#4B0082]">
+                            <FaDownload />
                             Resume
                         </a>
                     </div>
