@@ -49,9 +49,9 @@ const Contact = () => {
                 <h1 className="text-4xl font-bold">Contact me</h1>
                 <p className="pt-3 pb-6 text-lg">Please fell out the form below to contact me!</p>
             </div>
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-10 mt-5">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-6 mt-5">
                 <div className="lg:w-1/2">
-                    <img src={contact} alt="contact" className='rounded-3xl' />
+                    <img src={contact} alt="contact" className='rounded-3xl w-full h-[400px]' />
                 </div>
                 <form onSubmit={handleSubmit(onSubmit)} className="w-full lg:w-1/2">
                     <label className="form-control">
