@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <>
             <footer className="bg-gray-800 text-gray-300">
-                <div className="grid grid-cols-1 lg:grid-cols-4 justify-between p-16 max-w-screen-2xl container mx-auto px-4 lg:px-20 space-y-6 lg:space-y-0">
+                <div className="grid grid-cols-1 lg:grid-cols-4 justify-between p-16 pb-8 max-w-screen-2xl container mx-auto px-4 lg:px-20 space-y-6 lg:space-y-0">
                     <nav className='text-center lg:text-left'>
                         <a className="flex justify-center items-center lg:justify-start gap-2 font-bold">
                             <img src={logo} alt="Logo" className='w-14 rounded-full' />
@@ -18,17 +18,17 @@ const Footer = () => {
                                 <h1 className='text-[#41b8d6]'>Developer</h1>
                             </div>
                         </a>
-                        <div className="text-lg font-bold space-y-2 mt-6 flex flex-col items-center lg:items-start">
+                        <div className=" font-bold space-y-2 mt-6 flex flex-col items-center lg:items-start">
                             <p className='flex items-center gap-2 '>
-                                <IoIosPerson className="text-[#41b8d6] text-xl" />
+                                <IoIosPerson className="text-[#41b8d6]" />
                                 <span>Shuvankor Hazra</span>
                             </p>
                             <p className='flex items-center gap-2 '>
-                                <IoIosPhonePortrait className="text-[#41b8d6] text-xl" />
+                                <IoIosPhonePortrait className="text-[#41b8d6] " />
                                 <span>+88 01741-836653</span>
                             </p>
                             <p className='flex items-center gap-2 '>
-                                <IoIosMail className="text-[#41b8d6] text-xl" />
+                                <IoIosMail className="text-[#41b8d6]" />
                                 <span>shuvo.s.ovuhs@gmail.com</span>
                             </p>
                         </div>
