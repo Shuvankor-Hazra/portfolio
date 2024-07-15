@@ -62,7 +62,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <a href='/My Resume.pdf' download className="btn bg-[#41b8d6] text-white hover:bg-[#4B0082]">
+                        <a href='/Resume.pdf' download className="btn bg-[#41b8d6] text-white hover:bg-[#4B0082]">
                             <FaDownload />
                             Resume
                         </a>
