@@ -8,7 +8,7 @@ const Banner = () => {
     return (
         <>
             <div name="Home" className="bg-base-300 max-w-screen-2xl container mx-auto px-4 md:px-20 py-12 md:py-24">
-                <div className="flex flex-col-reverse lg:flex-row gap-6 pt-24">
+                <div className="flex items-center flex-col-reverse lg:flex-row pt-20 pb-6">
                     <div className="lg:w-1/2 flex flex-col justify-center space-y-6 text-center md:text-left">
                         <p className='md:font-medium text-[#41b8d6]'>WELCOME TO MY FEED !</p>
                         <h1 className='text-3xl md:text-5xl font-bold'>I{"'"}m Shuvankor Hazra</h1>
@@ -53,8 +53,10 @@ const Banner = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="lg:w-1/2 flex items-center justify-center lg:justify-end">
-                        <img src={banner} alt="banner" />
+                    <div className="lg:w-1/2 flex justify-center">
+                        <div className='h-[350px] w-[350px] rounded-full'>
+                            <img src={banner} alt="banner" className='w-full rounded-3xl' />
+                        </div>
                     </div>
                 </div>
             </div>

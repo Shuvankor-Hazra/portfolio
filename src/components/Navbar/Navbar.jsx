@@ -1,7 +1,7 @@
-import logo from '../../assets/images/banner.png';
-import { MdOutlineMenu } from "react-icons/md";
 import { FaDownload } from 'react-icons/fa';
+import { MdOutlineMenu } from "react-icons/md";
 import { Link } from 'react-scroll';
+import logo from '../../assets/images/banner.png';
 
 
 const Navbar = () => {
@@ -35,7 +35,9 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <button className="flex items-center gap-2 hover:bg-transparent md:text-lg">
-                            <img src={logo} alt="Logo" className='w-14 rounded-full' />
+                            <div className='h-12 w-12'>
+                                <img src={logo} alt="Logo" className='w-full rounded-xl' />
+                            </div>
                             <div className='text-left font-bold'>
                                 <h1 className=' flex items-center text-[#4B0082]'>
                                     Web__
